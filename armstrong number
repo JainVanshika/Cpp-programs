@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+int arm(int num)
+{
+   int sum=0,r;
+   int a=num;
+   while(a>0)
+   {
+      r=a%10;
+      sum=sum+(r*r*r);
+      a=a/10;
+   }
+   if(sum==num)
+   {
+      return 0;
+   }
+   else{
+      return 1;
+   }
+}
+ int main()
+ {
+    int num,a,sum=0,r;
+    cout<<"enter the number:";
+    cin>>num;
+    int z=arm(num);
+    cout<<"\n";
+    if(arm(num)==0)
+    {
+       cout<<"it's an armstrong number";
+    }
+    else
+    {
+       cout<<"it's not an armstrong number";
+    }
+    return 0;
+ }
