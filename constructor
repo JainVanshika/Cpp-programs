@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+
+class telephone
+{
+    int tid;
+    int Ccode;
+    float callrate;
+    int cnumber;
+    public:
+    telephone()
+    {
+        tid=5;
+        Ccode=91;
+    }
+    void accept()
+    {
+        cout<<"enter the country number:";
+        cin>>cnumber;
+        cout<<"enter the charges of call:";
+        cin>>callrate;
+    }
+    void showdata()
+    {
+        cout<<endl<<"country id is "<<tid<<endl;
+        cout<<"country code is "<<Ccode<<endl;
+        cout<<"call rates are "<<callrate<<endl;
+        cout<<"country number is "<<cnumber;
+    }
+
+};
+int main()
+{
+    telephone t;
+    t.accept();
+    t.showdata();
+    return 0;
+}
